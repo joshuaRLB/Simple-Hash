@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Hash Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://e0.pxfuel.com/wallpapers/167/644/desktop-wallpaper-cyber-background-cyber-cyber-forensic-and-cyber-monday-cyber-green.jpg');
+      background-size: cover;
+      color: #fff;
+    }
+    .container {
+      max-width: 500px;
+      margin: 100px auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 8px;
+    }
+    input, button {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 1em;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #result {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Simple Hash Generator</h1>
+    <p>Enter any string, and this system will generate a fixed-length hash value.</p>
+    <input type="text" id="inputString" placeholder="Enter your string here" />
+    <button onclick="generateHash()">Generate Hash</button>
+    <div id="result"></div>
+  </div>
+
+  <script src="hash.js"></script>
+</body>
+</html>
